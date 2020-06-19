@@ -1,0 +1,2 @@
+#!/bin/bash
+clj -Sdeps '{:deps {clj-kondo {:mvn/version "RELEASE"}}}' -m clj-kondo.main --lint src

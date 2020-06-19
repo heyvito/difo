@@ -1,0 +1,4 @@
+#!/bin/bash
+lein cloverage
+cp ~/Desktop/coverage.css target/coverage/coverage.css
+
