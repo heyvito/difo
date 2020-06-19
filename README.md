@@ -108,11 +108,18 @@ Arguments passed to either `perform` or `perform-on` must be simple types, such 
 [Idempotency](https://en.wikipedia.org/wiki/Idempotence) means that a function enqueued for background processing can safely be executed multiple times. This will be specially important when automatic retries are implemented into Difo. When such feature lands, a unit can be half-executed, and then executed again, until it succeeds. That said, it is important to wrap operations in transactions, and make sure sensitive operations can be rolled-back in case an error happens during runtime.
 In the future, Difo will ensure units will be executed **at least once**, but not **exactly** once.
 
-
 ## Contributions
 
 ...are more than welcome!
 Feel free to fork and open a pull request. Please include tests, and ensure all tests are green!
+
+## TODO
+The following features will be implemented in the near future:
+
+- [ ] Statistics
+- [ ] Web Dashboard
+- [ ] Automatic Retries
+- [ ] Scheduled Units
 
 ## License
 
